@@ -1,0 +1,21 @@
+Header{
+    background-color: red;
+}
+Nav{
+    background-color: blue;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    color: red;
+}
+li{
+    list-style-type: none;
+    margin-inline: 10px;
+
+}
+ul{
+    display: flex;
+}
+label{
+
+}

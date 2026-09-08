@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom"
 
 
-const PostPage = ({posts, handleDelete}) => {
+const PostPage = ({posts, handleDelete, handleEdit}) => {
 
     const {id} = useParams() 
     const post = posts.find((post) => post.id == id)
@@ -12,10 +12,12 @@ const PostPage = ({posts, handleDelete}) => {
                     (<article>
                         <h1>{post.title}</h1>
                     <p>{post.body}</p>
+                    
+                    <Link to={`/edit/${id}`}><button>Edit</button></Link>
                     <button onClick={() => handleDelete(post.id)}>Delete</button>
                     </article>        
                     )
-                : <p>No available post</p>
+                : <p>Deleted</p>
             }
            
         </main>

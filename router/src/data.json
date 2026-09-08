@@ -1,0 +1,17 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "React",
+      "datatime": "",
+      "body": "React is a Rust framework"
+    },
+    {
+      "id": "2",
+      "title": "Python",
+      "datatime": "",
+      "body": "Python is a programming language"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
